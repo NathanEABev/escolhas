@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <title>Titulo improvisado</title>
+  </head>
+  <body>
+    
+    <main>
+      <!--introdução!-->
+      <img src="logo.png">
+      <div class="escolhas ativo" id="p0">
+        <h1>Introdução</h1>
+        <p>Você é um jovem aventureiro que descobre a existência de uma torre misteriosa no centro do mundo. Esta torre guarda um artefato lendário conhecido como "O Coração dos Desejos", capaz de realizar qualquer desejo do portador. Para alcançar o artefato, você deve subir pelos andares da torre, enfrentando desafios e tomando decisões cruciais. Cada escolha influencia o seu progresso e pode alterar o destino final.</p>
+        <br>
+        <h1>Início</h1>
+        <br>
+        <p>Você, um jovem aventureiro, finalmente chega à Torre dos Desejos, onde está o lendário artefato "O Coração dos Desejos". Ao se deparar com a entrada, você encontra duas opções: a grande porta principal, que promete desafios grandiosos, e uma porta escondida, mais discreta.</p>
+      
+        <div class="botoes">
+          <button class="prx" data-proximo="1">Entrar pela porta escondida</button>
+      
+          <button class="prx" data-proximo="2">Entrar pela porta principal</button>
+        </div>
+      </div>
+      
+    
+      <!--1 escolha!-->
+    <div class="escolhas" id="p1">
+      <p>Você entra em um corredor escuro com várias portas trancadas. Para prosseguir, deve encontrar a chave escondida, explorando o corredor e decifrando pistas que podem estar em compartimentos secretos ou sob objetos antigos. Você deseja:</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="3">Procurar pela chave em um labirinto de espelhos.</button>
+      
+        <button class="prx" data-proximo="4">Tentar forçar uma das portas.</button>
+      </div>
+      </div>
+      
+      <!--2 escolha!-->
+    <div class="escolhas" id="p2">
+      <p>Assim que entra na sala você é recebido por um guardião imponente, que observa você com uma expressão enigmática. Ele revela que há duas maneiras de avançar para o próximo andar: pagar um tributo em ouro ou enfrentar uma batalha. O guardião aguarda sua decisão, sabendo que cada escolha pode levar a um destino diferente. Você deseja:</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="5">Pagar o tributo.</button>
+      
+        <button class="prx tocadois" data-proximo="6">Lutar contra o guardião.</button>
+      </div>
+      </div>
+      
+      
+      <!--1 volta/ escolha 3!-->
+    <div class="escolhas" id="p3">
+      <p>Você encontra uma chave, mas ao pegá-la, ativa uma armadilha que o transporta de volta ao ponto de partida.</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="0">Proxímo</button>
+      </div>
+      </div>
+      
+      <!--4 escolha!-->
+    <div class="escolhas" id="p4">
+      <p>Usando força bruta, você consegue avançar para o próximo andar.</p>
+      <br>
+      <p>Após passar pelo andar, você entra em uma sala onde precisa resolver um enigma de inteligência. Você deseja:</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="7">Ignorar os desafios e procurar por uma rota alternativa.</button>
+      
+        <button class="prx" data-proximo="8">Enfrentar um desafio de inteligência.</button>
+      </div>
+      </div>
+      
+      <!--5 escolha!-->
+    <div class="escolhas" id="p5">
+      <p>Você decide pagar o tributo ao guardião, com o tributo aceito, o guardião permite sua passagem para o próximo andar.</p>
+      <br>
+      <p>Ao entrar na próxima sala, você se depara com outro guardião, imponente e enigmático. Em vez de uma batalha, ele propõe um desafio diferente: um enigma. Você deseja:</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="9">Resolver o enigma apresentado pelo guardião.</button>
+      
+        <button class="prx" data-proximo="10">Ignorar o enigma e forçar a passagem.</button>
+      </div>
+      </div>
+
+      <!--2 volta/escolha 6!-->
+    <div class="escolhas" id="p6">
+      <img src="derrota.jpg">
+      <p>Após uma batalha intensa, você consegue vencer o guardião, mas sofre graves ferimentos no processo. Exausto e debilitado, percebe que não tem outra escolha a não ser retornar. A vitória foi sua, mas a recuperação fará com que você tenha que abandonar sua jornada.</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="0">Proxímo</button>
+      </div>
+      </div>
+
+      <!--3 volta/escolha 7!-->
+    <div class="escolhas" id="p7">
+      <p>Explorando o andar, você encontra um atalho que parece promissor. No entanto, ao seguir por esse caminho, você cai em uma emboscada cuidadosamente planejada. Cercado e sem muitas opções, é forçado a recuar e acaba sendo transportado para outro andar.</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="2">Proxímo</button>
+      </div>
+      </div>
+
+      <!--8 escolha!-->
+    <div class="escolhas" id="p8">
+      <p>Você resolve o enigma com sucesso, e a porta à sua frente se abre lentamente, revelando uma escada que leva ao próximo andar. Com a mente afiada e um senso renovado de determinação, você avança para o próximo nível da torre, pronto para enfrentar os novos desafios que aguardam.</p>
+      <br>
+      <p>Enquanto avança em sua jornada, você encontra uma figura sábia e experiente disposta a ser seu mentor. Este mentor oferece orientação, conselhos e treinamento, compartilhando conhecimentos valiosos e estratégias para ajudá-lo a superar os desafios da torre. Você deseja:</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="11">Aceitar a ajuda do mentor.</button>
+      
+        <button class="prx tocadois" data-proximo="12">Ignorar o mentor e seguir sozinho.</button>
+      </div>
+      </div>
+
+      <!--8.2 escolha!-->
+    <div class="escolhas" id="p82">
+      <p>Enquanto avança em sua jornada, você encontra uma figura sábia e experiente disposta a ser seu mentor. Este mentor oferece orientação, conselhos e treinamento, compartilhando conhecimentos valiosos e estratégias para ajudá-lo a superar os desafios da torre. Você deseja:</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="11">Aceitar a ajuda do mentor.</button>
+      
+        <button class="prx" data-proximo="12">Ignorar o mentor e seguir sozinho.</button>
+      </div>
+      </div>
+
+      <!--9 escolha!-->
+    <div class="escolhas" id="p9">
+      <p>Ao resolver o enigma proposto pelo guardião, você desbloqueia um caminho direto que leva ao próximo andar. Com a resposta correta, o guardião se afasta, revelando uma passagem que permite avançar sem mais obstáculos. Você segue pelo novo caminho, pronto para enfrentar os desafios do próximo nível da torre.</p>
+      <br>
+      <p>Após resolver o enigma, você entra na próxima sala e se depara com mais um guardião. Desta vez, o guardião não propõe um enigma ou desafio físico, mas pede que você conte suas verdadeiras intenções sobre o "Coração dos Desejos". Ele observa você com uma expressão séria, aguardando que você revele seus objetivos e motivações para buscar o artefato lendário. Você deseja:</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="13">Mentir para o guardião.</button>
+      
+        <button class="prx" data-proximo="14">Revelar sua verdadeira intenção ao guardião.</button>
+      </div>
+      </div>
+
+      <!--4 volta/escolha 10!-->
+    <div class="escolhas" id="p10">
+      <p>Ao tentar ignorar o enigma proposto pelo guardião, você rapidamente percebe que essa decisão tem suas consequências. O guardião, furioso com sua falta de respeito ao desafio, se torna uma força implacável. Você é derrotado e, com um último golpe, é enviado a outro andar</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="82">Proxímo</button>
+      </div>
+      </div>
+
+      <!--11 escolha!-->
+    <div class="escolhas" id="p11">
+      <p>Seu mentor, após ouvir sobre seus desafios e progressos, fornece dicas valiosas para enfrentar os obstáculos do próximo andar. Com essas orientações, você consegue superar os desafios mais rapidamente e com mais eficiência. As dicas do mentor são cruciais para desbloquear uma passagem secreta que leva diretamente ao andar superior, avançando assim em sua jornada com um novo senso de clareza e estratégia.</p>
+      <br>
+      <p>Ao avançar para o próximo andar, você se depara com uma arena colossal e sombria, onde um monstro imponente aguarda. A arena está cercada por paredes de pedra e iluminada apenas por uma luz que emana do centro, onde o monstro se posiciona.
+Para continuar sua jornada, você deve enfrentar e derrotar a criatura. O monstro, com seus olhos brilhantes e garras afiadas, demonstra ser um adversário formidável. Você deseja:</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="15">Evitar o monstro e procurar um atalho.</button>
+      
+        <button class="prx" data-proximo="16">Enfrentar um monstro feroz.</button>
+      </div>
+      </div>
+
+      <!--11.2 escolha!-->
+    <div class="escolhas" id="p112">
+      <p>Ao avançar para o próximo andar, você se depara com uma arena colossal e sombria, onde um monstro imponente aguarda. A arena está cercada por paredes de pedra e iluminada apenas por uma luz que emana do centro, onde o monstro se posiciona.
+Para continuar sua jornada, você deve enfrentar e derrotar a criatura. O monstro, com seus olhos brilhantes e garras afiadas, demonstra ser um adversário formidável. Você deseja:</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="15">Evitar o monstro e procurar um atalho.</button>
+      
+        <button class="prx" data-proximo="16">Enfrentar um monstro feroz.</button>
+      </div>
+      </div>
+
+      <!--5 volta/escolha 12!-->
+    <div class="escolhas" id="p12">
+      <img src="derrota.jpg">
+      <p>Ao recusar as dicas do mentor, você decide enfrentar os desafios do próximo andar por conta própria. No entanto, as dificuldades se mostram mais intensas e complexas do que o esperado. Sem a orientação necessária, você encontra obstáculos que não consegue superar e acaba sendo forçado a retornar.</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="0">Proxímo</button>
+      </div>
+      </div>
+
+      <!--6 volta/escolha 13!-->
+    <div class="escolhas" id="p13">
+      <p>Ao tentar enganar o guardião, você logo percebe que essa escolha tem um preço elevado. O guardião, enfurecido pela sua tentativa de trapaça, se transforma em uma força incontrolável. Você é rapidamente subjugado e, com um golpe decisivo, é lançado para longe e logo em seguida apaga. Ao acordar você se encontra em um lugar diferente e decide seguir sua jornada</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="112">Proxímo</button>
+      </div>
+      </div>
+
+      <!--14 escolha!-->
+    <div class="escolhas" id="p14">
+      <p>Após revelar suas verdadeiras intenções, o guardião reconhece sua sinceridade e decide ajudá-lo a avançar. Com um gesto de aprovação, ele abre uma passagem secreta que leva diretamente ao próximo andar. Agradecido pela ajuda, você segue para o novo nível da torre, pronto para enfrentar os desafios que aguardam.</p>
+      <br>
+      <p>Ao avançar para o andar, você encontra um guardião que, desta vez, tenta persuadi-lo com uma oferta sedutora. O guardião apresenta uma proposta tentadora que pode facilitar sua jornada ou oferecer um benefício significativo, mas você deve decidir se aceita a oferta ou mantém seu foco em sua missão principal. A escolha que você fizer pode influenciar seu progresso e os desafios futuros. Você deseja:</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="17">Resistir à tentação oferecida pelo guardião.</button>
+      
+        <button class="prx" data-proximo="18">Ceder à tentação.</button>
+      </div>
+      </div>
+
+      <!--14.2 escolha!-->
+    <div class="escolhas" id="p142">
+      <p>Ao avançar para o andar, você encontra um guardião que, desta vez, tenta persuadi-lo com uma oferta sedutora. O guardião apresenta uma proposta tentadora que pode facilitar sua jornada ou oferecer um benefício significativo, mas você deve decidir se aceita a oferta ou mantém seu foco em sua missão principal. A escolha que você fizer pode influenciar seu progresso e os desafios futuros. Você deseja:</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="17">Resistir à tentação oferecida pelo guardião.</button>
+      
+        <button class="prx" data-proximo="18">Ceder à tentação.</button>
+      </div>
+      </div>
+
+      <!--7 volta/escolha 15!-->
+    <div class="escolhas" id="p15">
+      <p>Você encontra um atalho perigoso que, infelizmente, o leva a outro andar</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="142">Proxímo</button>
+      </div>
+      </div>
+
+      <!--16 escolha!-->
+    <div class="escolhas" id="p16">
+      <p>Após vencer o monstro feroz, você conquista o direito de avançar e é conduzido ao próximo andar, onde novos desafios e oportunidades esperam por você.</p>
+      <br>
+      <p>Ao avançar para o próximo andar, você se depara com uma difícil escolha. Diante de você estão duas opções significativas, cada uma com suas próprias consequências e desafios. A decisão que você tomar agora será crucial para determinar seu caminho final na torre e seu sucesso na busca pelo "Coração dos Desejos". Você deseja:</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="19">Fazer uma escolha corajosa.</button>
+      
+        <button class="prx tocatres" data-proximo="20">Fazer uma escolha cautelosa.</button>
+      </div>
+      </div>
+
+      <!--17 escolha!-->
+    <div class="escolhas" id="p17">
+      <p>Ao resistir à oferta do guardião, você descobre um atalho que leva diretamente a um andar avançado, economizando tempo e evitando desafios adicionais. Esse caminho proporciona uma progressão mais rápida em sua jornada pela torre.</p>
+      <br>
+      <p>Ao continuar sua jornada, você se depara com um enigma envolvendo várias portas. Cada porta está marcada com símbolos diferentes e pode levar a caminhos diversos. Você deseja:</p>
+      
+      <div class="botoes">
+        <button class="prx tocatres"  data-proximo="20">Forçar a porta sem resolver o enigma.</button>
+      
+        <button class="prx" data-proximo="22">Resolver o enigma.</button>
+      </div>
+      </div>
+
+      <!--8 volta/escolha 18!-->
+    <div class="escolhas" id="p18">
+      <p>Ao ceder à tentação do guardião, você é desviado para uma rota alternativa . Ao observar o lugar você percebe uma porta que emana um grande poder e segue em frente.</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="182" id="tocaum">Proxímo</button>
+      </div>
+      </div>
+
+      <!--final 1!-->
+    <div class="escolhas" id="p182">
+      <img src="finais.jpg">
+      <p>Ao chegar ao ultimo andar, você encontra o Coração dos Desejos, mas é tentado por um desejo egoísta. Ao usar o artefato para seus próprios fins, você descobre que seu desejo tem consequências devastadoras. O mundo é alterado para pior e você se vê isolado, carregando o peso de sua escolha errada. Este final mostra as consequências de usar o poder para interesses pessoais.</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="0">Jogar novamente</button>
+      </div>
+      </div>
+
+      <!--19 escolha!-->
+    <div class="escolhas" id="p19">
+      <p>Diante da difícil escolha no próximo andar, você decide fazer uma escolha corajosa. Com determinação, você opta por seguir o caminho que parece mais desafiador e arriscado, acreditando que esse passo ousado é necessário para alcançar seu objetivo final. Sua coragem será testada, mas também pode abrir portas para novas oportunidades e recompensas em sua jornada.</p>
+      
+      <div class="botoes">
+        <button class="prx tocaquatro"  data-proximo="192">Proxímo</button>
+      </div>
+      </div>
+
+      <!--final 2!-->
+    <div class="escolhas" id="p192">
+      <img src="finais.jpg">
+      <p>No ultimo andar, você encontra o Coração dos Desejos. Com o artefato em mãos, você faz um desejo que beneficia o mundo, trazendo paz e prosperidade. Você se torna uma lenda, conhecido por usar o poder de forma altruísta e sábia. Este final é o mais desejado e admirado, simbolizando a realização e a benevolência.</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="0">Jogar novamente</button>
+      </div>
+      </div>
+
+      <!--final 3!-->
+    <div class="escolhas" id="p20">
+      <img src="finais.jpg">
+      <p>Ao chegar ao final, você não consegue acessar o Coração dos Desejos. O artefato permanece fora de seu alcance, e você percebe que sua jornada não teve o impacto que esperava. No entanto, você aprendeu lições valiosas sobre si mesmo e sobre o mundo. Embora não tenha alcançado o objetivo final, sua jornada moldou seu caráter e trouxe uma nova compreensão sobre o verdadeiro valor dos desejos e escolhas.</p>
+      
+      <div class="botoes">
+        <button class="prx" data-proximo="0">Jogar novamente</button>
+      </div>
+      </div>
+
+      <!--22 escolha!-->
+    <div class="escolhas" id="p22">
+      <p>Ao resolver o enigma das portas, você desbloqueia a entrada para o último andar da torre. Com a porta finalmente aberta.</p>
+      
+      <div class="botoes">
+        <button class="prx tocaquatro" data-proximo="192">Proxímo</button>
+      </div>
+      </div>
+    </main>
+    
+    <footer>Página criada por <a href="https://github.com/NathanEABev" target="_blank">Nathan Bevilaqua</a></footer>
+    <script src="sketch.js"></script>
+  </body>
+</html>
