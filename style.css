@@ -1,0 +1,88 @@
+/*principal*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+/*font-family: "Oswald", sans-serif;*/
+
+/*botão*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/*font-family: "Lobster", sans-serif;*/
+
+/*footer*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+/*font-family: "Dancing Script", sans-serif;*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  background: gray;
+  background-image: url("fundo.png");
+  background-size: cover;
+  background-position: CENTER;
+  background-attachment: fixed;
+}
+
+main{
+  color: white;
+  font-size: 25px;
+  background-color: rgba(0,0,0,0.4);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+img{
+  width: 250px;
+  margin-bottom: 100px;
+}
+
+.escolhas{
+  display: none;
+}
+
+.escolhas.ativo{
+  display: block;
+}
+
+div.botoes {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+button {
+  font-family: "Lobster", sans-serif;
+  background-color: #DF2935;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+  color: white;
+  width: 250px;
+  display: inline-block;
+}
+
+footer {
+  font-family: "Dancing Script", sans-serif;
+  background-color: #113E6F;
+  text-align: center;
+  color: white;
+}
+
+footer > a:link {
+  color: black;
+  text-decoration: none;
+}
+
+footer > a:visited {
+  color: #39A0ED;
+}
+
+footer > a:hover {
+  color: #FDCA40;
+}
